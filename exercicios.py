@@ -1,40 +1,191 @@
-# #### Inteiros (`int`)
+import sys
 
-# 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-# 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-# 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
-# 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-# 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
-# #### Números de Ponto Flutuante (`float`)
+def ex01():
+    # Soma dois numeros inteiros inseridos pelo usuario.
+    tentativas = 0
 
-# 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
-# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-# 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+    while tentativas < 3:
+        try:
+            Numero1 = int(input("Digite o primeiro numero inteiro: "))
+            Numero2 = int(input("Digite o segundo numero inteiro: "))
+            print("A soma dos numeros e", Numero1 + Numero2)
+            break  # sai quando deu certo            
+        except ValueError:
+            print("Erro: Por favor, insira apenas numeros inteiros.")
+            tentativas += 1
+    else:
+        print("Numero maximo de tentativas atingido.")
 
-# #### Strings (`str`)
+def ex02():
+    # Recebe um numero e calcula o resto da divisao desse numero por 5.
+    numero = int(input("Digite um numero inteiro: "))
+    resto = numero % 5
+    print("O resto da divisao de", numero, "por 5 e", resto)
 
-# 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-# 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-# 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
-# 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
-# #### Booleanos (`bool`)
+def ex03():
+    # Multiplica dois numeros fornecidos pelo usuario e mostra o resultado.
+    numero1 = float(input("Digite o primeiro numero: "))
+    numero2 = float(input("Digite o segundo numero: "))
+    resultado = numero1 * numero2
+    print("O resultado da multiplicacao e", f"{resultado:.2f}")
 
-# 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
-# 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
-# 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
-# 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
-# 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-# #### try-except e if
+def ex04():
+    # Pede dois numeros inteiros e imprime a divisao inteira do primeiro pelo segundo.
+    pass
 
-# 21: Conversor de Temperatura
-# 22: Verificador de Palíndromo
-# 23: Calculadora Simples
-# 24: Classificador de Números
-# 25: Conversão de Tipo com Validação
 
+def ex05():
+    # Calcula o quadrado de um numero fornecido pelo usuario.
+    pass
+
+
+def ex06():
+    # Recebe dois numeros flutuantes e realiza a adicao.
+    pass
+
+
+def ex07():
+    # Calcula a media de dois numeros flutuantes fornecidos pelo usuario.
+    pass
+
+
+def ex08():
+    # Calcula a potencia de um numero (base e expoente fornecidos pelo usuario).
+    pass
+
+
+def ex09():
+    # Converte a temperatura de Celsius para Fahrenheit.
+    pass
+
+
+def ex10():
+    # Calcula a area de um circulo, recebendo o raio como entrada.
+    pass
+
+
+def ex11():
+    # Recebe uma string e a converte para maiusculas.
+    pass
+
+
+def ex12():
+    # Recebe o nome completo do usuario e imprime tudo em minusculas.
+    pass
+
+
+def ex13():
+    # Recebe uma frase e imprime sem espacos no inicio e no fim.
+    pass
+
+
+def ex14():
+    # Recebe uma data "dd/mm/aaaa" e imprime dia, mes e ano separadamente.
+    pass
+
+
+def ex15():
+    # Concatena duas strings fornecidas pelo usuario.
+    pass
+
+
+def ex16():
+    # Avalia duas expressoes booleanas e retorna o resultado do AND.
+    pass
+
+
+def ex17():
+    # Recebe dois valores booleanos e retorna o resultado do OR.
+    pass
+
+
+def ex18():
+    # Recebe um valor booleano e inverte esse valor.
+    pass
+
+
+def ex19():
+    # Compara se dois numeros fornecidos pelo usuario sao iguais.
+    pass
+
+
+def ex20():
+    # Verifica se dois numeros fornecidos pelo usuario sao diferentes.
+    pass
+
+
+def ex21():
+    # Conversor de temperatura.
+    pass
+
+
+def ex22():
+    # Verificador de palindromo.
+    pass
+
+
+def ex23():
+    # Calculadora simples.
+    pass
+
+
+def ex24():
+    # Classificador de numeros.
+    pass
+
+
+def ex25():
+    # Conversao de tipo com validacao.
+    pass
+
+
+EXERCICIOS = {
+    "ex01": ex01,
+    "ex02": ex02,
+    "ex03": ex03,
+    "ex04": ex04,
+    "ex05": ex05,
+    "ex06": ex06,
+    "ex07": ex07,
+    "ex08": ex08,
+    "ex09": ex09,
+    "ex10": ex10,
+    "ex11": ex11,
+    "ex12": ex12,
+    "ex13": ex13,
+    "ex14": ex14,
+    "ex15": ex15,
+    "ex16": ex16,
+    "ex17": ex17,
+    "ex18": ex18,
+    "ex19": ex19,
+    "ex20": ex20,
+    "ex21": ex21,
+    "ex22": ex22,
+    "ex23": ex23,
+    "ex24": ex24,
+    "ex25": ex25,
+}
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python exercicios.py ex01")
+        print("Opcoes:", ", ".join(EXERCICIOS.keys()))
+        return
+
+    nome = sys.argv[1]
+    func = EXERCICIOS.get(nome)
+    if func is None:
+        print(f"Exercicio invalido: {nome}")
+        print("Opcoes:", ", ".join(EXERCICIOS.keys()))
+        return
+
+    func()
+
+
+if __name__ == "__main__":
+    main()
