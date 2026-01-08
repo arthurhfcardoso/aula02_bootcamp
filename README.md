@@ -42,6 +42,8 @@ python exercicios.py ex10
 - Entendi que `True` e `False` sao os unicos booleanos reais.
 - Percebi que `bool("false")` vira `True`, entao tive que comparar texto.
 - Divisao inteira pode dar 0 quando o numerador e menor que o denominador.
+- `try/except` evita que o programa quebre com entradas invalidas e permite
+  mostrar mensagens mais claras.
 
 ## Arquivos principais
 
