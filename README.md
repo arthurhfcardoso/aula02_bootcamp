@@ -48,3 +48,21 @@ python exercicios.py ex10
 ## Arquivos principais
 
 - `exercicios.py`: minhas solucoes dos exercicios.
+- `desafio.py`: desafio de bonus com validacao de entrada, bonus em percentual
+  e calculo do KPI.
+
+## Desafio (desafio.py)
+
+O desafio pede nome, salario e bonus (em %). O script valida:
+
+- nome nao vazio
+- salario e bonus com conversao para numero
+- valores nao negativos
+
+Depois calcula o KPI e imprime o resultado.
+
+Para executar:
+
+```bash
+python desafio.py
+```
